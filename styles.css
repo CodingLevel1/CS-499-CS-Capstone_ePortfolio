@@ -1,0 +1,74 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* Section Styles */
+.projects {
+  padding: 30px;
+  background-color: #2a2a2a;
+  margin: 20px 0;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.project {
+  background-color: #3a3a3a;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.project p {
+  color: #ccc;
+}
+
+.project a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+}
