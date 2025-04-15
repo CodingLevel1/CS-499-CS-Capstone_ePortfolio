@@ -16,7 +16,12 @@ header {
 
 h1 {
   font-family: 'Orbitron', sans-serif;
-  color: #2980b9; /* Changed from green to blue */
+  color: #2980b9; /* blue */
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #2980b9; /* blue */
 }
 
 p {
