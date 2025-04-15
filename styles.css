@@ -16,7 +16,7 @@ header {
 
 h1 {
   font-family: 'Orbitron', sans-serif;
-  color: #2980b9; /* Blue accent color */
+  color: #2980b9; /* Changed from green to blue */
 }
 
 p {
@@ -66,7 +66,7 @@ li {
 }
 
 .tabcontent h2 {
-  color: #2980b9;
+  color: #2980b9; /* Blue for sub-headings */
 }
 
 .tabcontent p {
