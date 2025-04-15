@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS-499 Computer Science Capstone ePortfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script>
-    // Function to show the selected tab content and hide others
-    function openTab(tabName) {
-      var i, tabContent, tabLinks;
-
-      // Hide all tab content
-      tabContent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-      }
-
-      // Remove the 'active' class from all tabs
-      tabLinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active");
-      }
-
-      // Show the current tab content and add 'active' class to the clicked tab
-      document.getElementById(tabName).style.display = "block";
-      event.currentTarget.classList.add("active");
-    }
-
-    // Set default tab to be displayed
-    window.onload = function() {
-      document.getElementById("defaultOpen").click();
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 499 Capstone ePortfolio</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to the updated styles.css -->
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <h1>CS-499 Computer Science Capstone ePortfolio</h1>
-    <p>Welcome to my professional portfolio page where I showcase my projects and progress throughout my computer science journey.</p>
-  </header>
 
-  <!-- Navigation Bar (Tabs) -->
-  <nav>
-    <ul>
-      <li><button class="tablinks" id="defaultOpen" onclick="openTab('projects')">Projects</button></li>
-      <li><button class="tablinks" onclick="openTab('code-review')">Code Review Video</button></li>
-      <li><button class="tablinks" onclick="openTab('about-me')">About Me</button></li>
-      <li><button class="tablinks" onclick="openTab('contact')">Contact</button></li>
+    <!-- Navigation Tabs -->
+    <ul class="tabs">
+        <li><a href="#" class="active" data-tab="projects-tab">Projects</a></li>
+        <li><a href="#" data-tab="code-review-video-tab">Code Review Video</a></li>
+        <li><a href="#" data-tab="narratives-tab">Narratives</a></li>
+        <li><a href="#" data-tab="about-me-tab">About Me</a></li>
+        <li><a href="#" data-tab="contact-tab">Contact</a></li>
     </ul>
-  </nav>
 
-  <!-- Projects Section -->
-  <div id="projects" class="tabcontent">
-    <h2>Projects</h2>
-    <p>Explore the links to some of my key projects from my coursework in the Computer Science program at SNHU:</p>
-    <!-- Project details here -->
-  </div>
+    <!-- Tab Content Sections -->
+    <section id="projects-tab" class="active">
+        <div class="project-section">
+            <h2>CS-300 Data Structures and Algorithms</h2>
+            <p class="project-description">
+                Category: Algorithms and Data Structures
+                <br>This project focused on implementing and optimizing data structures like Binary Search Trees and AVL Trees.
+            </p>
+            <a href="path_to_original_code_file" class="view-original-link" target="_blank">View Original Code</a>
+            <a href="path_to_enhanced_code_file" class="view-original-link" target="_blank">View Enhanced Code</a>
+        </div>
+        <div class="project-section">
+            <h2>CS-340 Client/Server Development</h2>
+            <p class="project-description">
+                Category: Databases
+                <br>This project involved creating an interactive dashboard with MongoDB and integrating dynamic data visualizations.
+            </p>
+            <a href="path_to_original_code_file" class="view-original-link" target="_blank">View Original Code</a>
+            <a href="path_to_enhanced_code_file" class="view-original-link" target="_blank">View Enhanced Code</a>
+        </div>
+    </section>
 
-  <!-- Code Review Section -->
-  <div id="code-review" class="tabcontent">
-    <h2>Code Review Video</h2>
-    <p>View my detailed code review video where I analyze and improve my previous code projects.</p>
-    <div style="text-align:center;">
-      <img src="your-image-thumbnail.png" alt="Code Review Thumbnail" width="300">
-      <p><a href="https://youtu.be/your_code_review_video_link" target="_blank">Watch Code Review</a></p>
-    </div>
-  </div>
+    <section id="code-review-video-tab">
+        <div>
+            <h2>Code Review Video</h2>
+            <p>View my detailed code review video where I analyze and improve my previous code projects.</p>
+            <a href="https://www.youtube.com/watch?v=your_video_link" target="_blank">
+                <img src="path_to_thumbnail_image.jpg" alt="Code Review Video" width="320" height="180">
+            </a>
+        </div>
+    </section>
 
-  <!-- About Me Section -->
-  <div id="about-me" class="tabcontent">
-    <h2>About Me</h2>
-    <p>Hi, I'm Mari Shana Tongco, a computer science student at SNHU. My main interests lie in **IT Support**, **Cybersecurity**, and **Software Development**. I am also passionate about working with databases and creating scalable systems. After transitioning from the medical field, I’ve gained hands-on experience with software engineering and security practices.</p>
-  </div>
+    <section id="narratives-tab">
+        <div>
+            <h2>Narratives</h2>
+            <p>Here are the detailed narratives explaining the enhancements made to each project:</p>
+            <ul>
+                <li><a href="path_to_CS410_Software_Reverse_Engineering_Narrative.docx" target="_blank">CS-410 Software Reverse Engineering Narrative</a></li>
+                <li><a href="path_to_CS300_Data_Structures_and_Algorithms_Narrative.docx" target="_blank">CS-300 Data Structures and Algorithms Narrative</a></li>
+                <li><a href="path_to_CS340_Client_Server_Development_Narrative.docx" target="_blank">CS-340 Client/Server Development Narrative</a></li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <div id="contact" class="tabcontent">
-    <h2>Contact</h2>
-    <p>You can reach me at <strong>mari@example.com</strong>. I look forward to connecting with professionals in the IT and cybersecurity fields!</p>
-    <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br><br>
+    <section id="about-me-tab">
+        <div>
+            <h2>About Me</h2>
+            <p>Hello! I’m Mari Shana Tongco, a Computer Science student at SNHU. I am passionate about IT and Cybersecurity. After serving as an Ophthalmic Technician in the Army, I realized that my true passion lies in the tech industry. I am actively pursuing a career in IT with a focus on cybersecurity.</p>
+        </div>
+    </section>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br><br>
+    <section id="contact-tab">
+        <div>
+            <h2>Contact</h2>
+            <p>If you want to get in touch with me, feel free to send me a message:</p>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
 
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
 
-      <input type="submit" value="Send Message">
-    </form>
-  </div>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>Created by Mari Shana Tongco &copy; 2025</p>
-  </footer>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for tab switching
+        const tabs = document.querySelectorAll('.tabs li a');
+        const sections = document.querySelectorAll('section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Deactivate all tabs and hide all sections
+                tabs.forEach(tab => tab.classList.remove('active'));
+                sections.forEach(section => section.classList.remove('active'));
+
+                // Activate the clicked tab and show the corresponding section
+                tab.classList.add('active');
+                document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+            });
+        });
+    </script>
+
 </body>
 </html>
