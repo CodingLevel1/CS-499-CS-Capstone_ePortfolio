@@ -1,119 +1,126 @@
-/* General body and font settings */
+/* Global styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #333;  /* Dark background for consistency */
-    color: #fff;  /* Light text color for readability */
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #2c3e50; /* Dark background */
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3 {
-    color: #4CAF50;  /* Green color for headings */
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #34495e; /* Darker background */
 }
 
-/* Tabs */
-ul.tabs {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #444;  /* Dark background for the tabs */
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #4CAF50; /* Green accent color */
 }
 
-ul.tabs li {
-    padding: 15px;
-    text-align: center;
+p {
+  font-size: 18px;
 }
 
-ul.tabs li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+/* Navigation Bar styles */
+nav {
+  background-color: #2c3e50;
+  text-align: center;
+  padding: 10px;
 }
 
-/* Active tab style */
-ul.tabs li a.active {
-    background-color: #4CAF50;  /* Highlight active tab with green */
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/* Tab content sections */
-section {
-    display: none;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    margin-top: 20px;
+li {
+  display: inline;
+  margin: 0 20px;
 }
 
-/* Show content of active tab */
-section.active {
-    display: block;
+.tablinks {
+  background-color: #2c3e50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-/* View Original Code Link Style - Always visible */
-.view-original-link {
-    color: #4CAF50;  /* Green color for the link */
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
-    margin: 10px 0;
+.tablinks:hover {
+  background-color: #4CAF50;
 }
 
-/* Hover effect for the View Original Code link */
-.view-original-link:hover {
-    color: #45a049;  /* Slightly darker green on hover */
-    text-decoration: underline;
+.tablinks.active {
+  background-color: #1abc9c;
+  color: white;
 }
 
-/* Container for the code sections */
-.project-section {
-    background-color: #444;  /* Dark background for the sections */
-    margin-bottom: 20px;
-    padding: 15px;
+/* Tab content styles */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  background-color: #34495e; /* Slightly lighter background */
 }
 
-.project-description {
-    font-size: 18px;
-    margin-bottom: 10px;
+.tabcontent h2 {
+  color: #4CAF50;
 }
 
-/* Buttons for the original and enhanced code */
-.code-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
+.tabcontent p {
+  font-size: 18px;
+  color: #ecf0f1;
 }
 
-.code-button:hover {
-    background-color: #45a049;  /* Hover effect for buttons */
+img {
+  border-radius: 10px;
 }
 
-/* Data table styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+/* Contact Form Styles */
+form {
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-table th, table td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
 }
 
-table th {
-    background-color: #333;
-    color: #fff;
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
-/* Footer styling */
+input[type="submit"]:hover {
+  background-color: #1abc9c;
+}
+
+/* Footer styles */
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
+  background-color: #34495e;
+  text-align: center;
+  padding: 10px;
+  color: #ecf0f1;
+}
+
+/* Styling for links inside tabs */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
