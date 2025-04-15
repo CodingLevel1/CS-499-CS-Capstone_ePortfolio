@@ -1,67 +1,119 @@
-/* Basic styles for the page */
+/* General body and font settings */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #333;
-  color: #fff;
-  margin: 0;
-  padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #333;  /* Dark background for consistency */
+    color: #fff;  /* Light text color for readability */
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigation bar styles */
-nav {
-  background-color: #222;
-  padding: 10px;
+h1, h2, h3 {
+    color: #4CAF50;  /* Green color for headings */
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+/* Tabs */
+ul.tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #444;  /* Dark background for the tabs */
 }
 
-nav li {
-  display: inline-block;
-  margin-right: 10px;
+ul.tabs li {
+    padding: 15px;
+    text-align: center;
 }
 
-.tablinks {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
+ul.tabs li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.tablinks:hover {
-  background-color: #45a049;
+/* Active tab style */
+ul.tabs li a.active {
+    background-color: #4CAF50;  /* Highlight active tab with green */
 }
 
-/* Style for the active tab */
-.tablinks.active {
-  background-color: #333;
+/* Tab content sections */
+section {
+    display: none;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
 }
 
-/* Hide tab content by default */
-.tabcontent {
-  display: none;
-  padding: 20px;
-  background-color: #444;
+/* Show content of active tab */
+section.active {
+    display: block;
 }
 
-/* Show the default tab content */
-#defaultOpen {
-  display: block;
+/* View Original Code Link Style - Always visible */
+.view-original-link {
+    color: #4CAF50;  /* Green color for the link */
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin: 10px 0;
 }
 
-/* Tab content section styles */
-#projects, #code-review, #about-me, #contact {
-  padding: 20px;
-  background-color: #444;
-  border-radius: 5px;
+/* Hover effect for the View Original Code link */
+.view-original-link:hover {
+    color: #45a049;  /* Slightly darker green on hover */
+    text-decoration: underline;
 }
 
+/* Container for the code sections */
+.project-section {
+    background-color: #444;  /* Dark background for the sections */
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.project-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Buttons for the original and enhanced code */
+.code-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.code-button:hover {
+    background-color: #45a049;  /* Hover effect for buttons */
+}
+
+/* Data table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Footer styling */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #222;
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
 }
