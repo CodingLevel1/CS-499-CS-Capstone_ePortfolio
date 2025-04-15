@@ -3,14 +3,14 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1e1e1e;
-  color: #fff;
+  background-color: #1e1e1e; /* Dark background for contrast */
+  color: #fff; /* White text */
   line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-  background-color: #333;
+  background-color: #333; /* Dark gray header */
   padding: 20px;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
@@ -18,18 +18,18 @@ header {
 
 header h1 {
   font-size: 3rem;
-  color: #fff;
+  color: #4CAF50; /* Green text for the title */
 }
 
 header p {
   font-size: 1.2rem;
-  color: #aaa;
+  color: #aaa; /* Light gray for the subtitle */
   margin-top: 10px;
 }
 
 /* Navigation Bar Styles */
 nav {
-  background-color: #444;
+  background-color: #444; /* Dark gray navigation bar */
   padding: 10px;
   text-align: center;
 }
@@ -47,30 +47,30 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #fff; /* White text for links */
   font-size: 1rem;
 }
 
 nav ul li a:hover {
-  color: #4CAF50;
+  color: #4CAF50; /* Green hover effect */
 }
 
 /* Section Styles */
 .projects, #about-me, #contact {
   padding: 30px;
-  background-color: #2a2a2a;
+  background-color: #2a2a2a; /* Dark gray section background */
   margin: 20px 0;
   border-radius: 8px;
 }
 
 .projects h2, #about-me h2, #contact h2 {
   font-size: 2rem;
-  color: #fff;
+  color: #fff; /* White text for section headings */
   text-align: center;
 }
 
 .project {
-  background-color: #3a3a3a;
+  background-color: #3a3a3a; /* Slightly lighter gray for projects */
   margin: 15px 0;
   padding: 20px;
   border-radius: 10px;
@@ -78,15 +78,15 @@ nav ul li a:hover {
 
 .project h3 {
   font-size: 1.5rem;
-  color: #fff;
+  color: #4CAF50; /* Green for project titles */
 }
 
 .project p {
-  color: #ccc;
+  color: #ccc; /* Light gray text for project descriptions */
 }
 
 .project a {
-  color: #4CAF50;
+  color: #4CAF50; /* Green links */
   text-decoration: none;
   font-weight: bold;
 }
@@ -97,11 +97,11 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-  background-color: #333;
+  background-color: #333; /* Dark gray footer */
   padding: 10px;
   text-align: center;
   font-size: 1rem;
-  color: #aaa;
+  color: #aaa; /* Light gray footer text */
 }
 
 /* Responsive Design */
@@ -152,27 +152,27 @@ table {
 }
 
 table, th, td {
-  border: 1px solid #4CAF50;
+  border: 1px solid #4CAF50; /* Green border for tables */
 }
 
 th, td {
   padding: 12px;
   text-align: left;
-  color: #fff;
+  color: #fff; /* White text in tables */
 }
 
 th {
-  background-color: #4CAF50;
+  background-color: #4CAF50; /* Green background for table headers */
 }
 
 td {
-  background-color: #333;
+  background-color: #333; /* Dark gray background for table cells */
 }
 
 /* Style for Buttons and Links */
 button, a {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4CAF50; /* Green button background */
   border: none;
   color: #fff;
   text-decoration: none;
@@ -183,5 +183,5 @@ button, a {
 }
 
 button:hover, a:hover {
-  background-color: #45a049;
+  background-color: #45a049; /* Slightly darker green on hover */
 }
