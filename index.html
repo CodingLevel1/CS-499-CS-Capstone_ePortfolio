@@ -6,6 +6,33 @@
   <title>CS-499 Computer Science Capstone ePortfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Function to show the selected tab content and hide others
+    function openTab(tabName) {
+      var i, tabContent, tabLinks;
+
+      // Hide all tab content
+      tabContent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
+
+      // Remove the 'active' class from all tabs
+      tabLinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active");
+      }
+
+      // Show the current tab content and add 'active' class to the clicked tab
+      document.getElementById(tabName).style.display = "block";
+      event.currentTarget.classList.add("active");
+    }
+
+    // Set default tab to be displayed
+    window.onload = function() {
+      document.getElementById("defaultOpen").click();
+    }
+  </script>
 </head>
 <body>
   <!-- Header Section -->
@@ -17,16 +44,15 @@
   <!-- Navigation Bar (Tabs) -->
   <nav>
     <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#code-review">Code Review Video</a></li>
-      <li><a href="#narratives">Narratives</a></li>
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><button class="tablinks" id="defaultOpen" onclick="openTab('projects')">Projects</button></li>
+      <li><button class="tablinks" onclick="openTab('code-review')">Code Review Video</button></li>
+      <li><button class="tablinks" onclick="openTab('about-me')">About Me</button></li>
+      <li><button class="tablinks" onclick="openTab('contact')">Contact</button></li>
     </ul>
   </nav>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <div id="projects" class="tabcontent">
     <h2>Projects</h2>
     <p>Explore the links to some of my key projects from my coursework in the Computer Science program at SNHU:</p>
 
@@ -54,37 +80,41 @@
       <p><strong>Original Code:</strong> <a href="https://github.com/CodingLevel1/CS-340-original" target="_blank">View Original Code</a></p>
       <p><strong>Enhanced Code:</strong> <a href="https://github.com/CodingLevel1/CS-340-enhanced" target="_blank">View Enhanced Code</a></p>
     </div>
-  </section>
+  </div>
 
   <!-- Code Review Section -->
-  <section id="code-review">
+  <div id="code-review" class="tabcontent">
     <h2>Code Review Video</h2>
     <p>View my detailed code review video where I analyze and improve my previous code projects.</p>
-    <a href="https://youtu.be/your_code_review_video_link" target="_blank">Watch Code Review</a>
-  </section>
-
-  <!-- Narratives Section -->
-  <section id="narratives">
-    <h2>Narratives</h2>
-    <p>Here are the detailed narratives explaining the enhancements made to each project:</p>
-    <ul>
-      <li><a href="your_narrative_file_link_1" target="_blank">CS-410 Software Reverse Engineering Narrative</a></li>
-      <li><a href="your_narrative_file_link_2" target="_blank">CS-300 Data Structures and Algorithms Narrative</a></li>
-      <li><a href="your_narrative_file_link_3" target="_blank">CS-340 Client/Server Development Narrative</a></li>
-    </ul>
-  </section>
+    <div style="text-align:center;">
+      <img src="your-image-thumbnail.png" alt="Code Review Thumbnail" width="300">
+      <p><a href="https://youtu.be/your_code_review_video_link" target="_blank">Watch Code Review</a></p>
+    </div>
+  </div>
 
   <!-- About Me Section -->
-  <section id="about-me">
+  <div id="about-me" class="tabcontent">
     <h2>About Me</h2>
     <p>Hi, I'm Mari Shana Tongco, a computer science student at SNHU. My main interests lie in **IT Support**, **Cybersecurity**, and **Software Development**. I am also passionate about working with databases and creating scalable systems. After transitioning from the medical field, I’ve gained hands-on experience with software engineering and security practices.</p>
-  </section>
+  </div>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <div id="contact" class="tabcontent">
     <h2>Contact</h2>
     <p>You can reach me at <strong>mari@example.com</strong>. I look forward to connecting with professionals in the IT and cybersecurity fields!</p>
-  </section>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
 
   <!-- Footer Section -->
   <footer>
