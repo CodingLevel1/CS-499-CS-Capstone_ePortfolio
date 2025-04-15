@@ -15,17 +15,17 @@ header {
 }
 
 h1 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #2980b9; /* blue */
 }
 
 h2 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #2980b9; /* blue */
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* Navigation Bar styles */
